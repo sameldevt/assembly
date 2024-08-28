@@ -1,10 +1,10 @@
 compilar para objeto:
 
-    nasm -f elf64 -o {nome_do_objeto}.o {nome_do_assembly}.asm
+    nasm -felf64 {nome_do_asm}.asm -o {nome_do_objeto}.o
 
 compilar para executavel:
 
-    ld -m elf_x86_64 -s -o {nome_do_executavel} {nome_do_objeto}.o
+    ld -o {nome_do_executavel} {nome_do_objeto}.o
 
 como executar:
 
